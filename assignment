@@ -1,0 +1,61 @@
+Q1. What is the purpose of Python&#39;s OOP?
+    it is a python programing language with oops said means object oriented programming, oops understand from its a large function(class) of small different function may you call it set of function,
+    you can call it any time with just small object,
+    demo=classname() this is the procedure to call it
+   --> makes code more reusable and easier to work with larger programs this the purpose of python
+instance:- class pythonassignment:
+                a=10
+         demo=pythonassignment()
+        print(demo.a)
+
+Q2. Where does an inheritance search look for an attribute?
+
+In the instance object
+In the class the instance was created from
+In all higher superclasses, progressing from left to right
+The search stops at the first place the attribute is found
+
+Q3. How do you distinguish between a class object and an instance object?
+--class is the instaining of different object
+  class created once two or more object created  into class
+  class object has logical entity
+--object has instance of class
+  object only one function
+  object has physical entity
+
+Q4. What makes the first argument in a class’s method function special?
+    first argument in a class method function is __init__
+
+Q5. What is the purpose of the __init__ method?
+    perform initial argument in the instance
+    first object to detect it atribute
+    allow initail atribute to the set of values
+
+Q6. What is the process for creating a class instance?
+ first assign a name called class an then object name then below define a function or more after defining call the object name and output show you defining fuction inputes values
+examples :-   class assigment:
+                  def __init__(self,project):
+                      self.project=project
+              myassignment=assigment('complete')
+              print(myassignmetn.project)
+
+Q7. What is the process for creating a class?
+class assign after class_name the (:)
+define object function or orgument with initialize function self, then call it through class_name
+
+           class datascience:
+                  def __init__(self,project):
+                      self.project=project
+              myproject=datascience('Project complete')
+              print(datascience.project)
+
+
+Q8. How would you define the superclasses of a class?
+
+ a  parent class is a class from which another class (subclass or child class) inherits attributes and methods. 
+The process of inheriting from a superclass is known as inheritance.
+
+class superclass: <---- parent class
+
+
+class superclass(superclass):  <----- child class
