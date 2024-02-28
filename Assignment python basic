@@ -47,12 +47,33 @@ as a result the variable contain 23
 
 
 7. What should the values of the following two terms be?
-&#39;spam&#39; + &#39;spamspam&#39;
-&#39;spam&#39; * 3
+spam + spamspam
+spam* 3
+
+ANSWER - spam + spamspam as a result 'spamspamspam'
+ spam * as a result 'spamspamspam'
+
 
 8. Why is eggs a valid variable name while 100 is invalid?
 
+eggs is a valid variable because it followes python rules its char values
+100 is not valid variable and it violated python rules because its numerical in natures 
+
 9. What three functions can be used to get the integer, floating-point number, or string
 version of a value?
+
+ANSWER : -
+int()   int(67.5)  return 67
+float()  flaot(30) return 30.0
+str()  str(884) return "884"
+
+
+
 10. Why does this expression cause an error? How can you fix it?
 &#39;I have eaten &#39; + 99 + &#39; burritos.&#39;
+
+
+ANSWER : -
+ thie expression cause an error because string can not be concatenate  with numbers we ca fixed it just place number "99" with string as a result it
+'I have eaten 99 burritos.'
+
