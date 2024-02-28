@@ -1,0 +1,58 @@
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+*
+'hello'
+-87.8
+-
+/
++
+6
+
+Answer :- values:  -87.8 ,6  , ' hello'
+          expression: * , - , / , +
+
+
+2. What is the difference between string and variable?
+
+Answer :-  string is value representing text with this quoest " " for instance, "hello world" this is string and variable is a name that can show to any value
+variable , my_var= 77 or "hello world"
+
+3. Describe three different data types.
+
+Answer :- nt: includes all whole numbers (example 1, 456, 8643)
+Char: includes all characters (Eg. Letter, Number, Space, Symbol)
+String: comprises of a set of characters (Eg. "Hello World")
+
+4. What is an expression made up of? What do all expressions do?
+
+Answer :-  expression has combination of values, varibles, operators,function calls that can be evaluated to produce a result
+values : as number or string eg. 5 is a value , x is a variable
+operators :- arithmatic operators,comparison operators,logical operators 
+function calls :- you provide arguments to function for example len('hello world') len() is function with arguments
+
+
+5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+
+Answer :- Expression is a combination  of values, variable, operators, and function calls that can preduce result
+statement is a line of code that performs an action for example assignment statement,condition statement,loop statement 
+
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+
+as a result the variable contain 23 
+
+
+
+7. What should the values of the following two terms be?
+&#39;spam&#39; + &#39;spamspam&#39;
+&#39;spam&#39; * 3
+
+8. Why is eggs a valid variable name while 100 is invalid?
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+10. Why does this expression cause an error? How can you fix it?
+&#39;I have eaten &#39; + 99 + &#39; burritos.&#39;
