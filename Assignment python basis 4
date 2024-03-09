@@ -1,0 +1,81 @@
+1. Why are functions advantageous to have in your programs?
+
+Modularity of Code --- you can break down large program into smaller program or function
+Abstraction  --- 
+Code Reusability ---- you can use code again and again just write the function 
+Readability and Maintainability  --- fuction are easily understand and read clearly
+
+2. When does the code in a function run: when its specified or when its called?
+When you define a function, you write the code that defines what the function does.
+To execute the code inside a function, you need to call the function
+
+
+
+3. What statement creates a function?
+
+def function_name(assignment):
+    print('python basis')
+
+
+4. What is the difference between a function and a function call?
+This includes the function name, parameters (if any), and the block of code inside the function.
+When you call a function, the program jumps to the function definition and executes the code within it.
+
+
+5. How many global scopes are there in a Python program? How many local scopes?
+In a Python program, there are at most four active scopes: local, enclosing, global, and built-in. The local scope is created at function calls, the enclosing scope is for nested functions, the global scope contains names available throughout the code,
+and the built-in scope includes names like keywords and functions that are part of Python itself
+
+
+
+6. What happens to variables in a local scope when the function call returns?
+
+When a function call returns in Python, the local variables defined within that function are forgotten. These local variables have a limited scope, existing only within the function block in which they are defined. Once the function call ends,
+these local variables are no longer accessible or remembered
+
+7. What is the concept of a return value? Is it possible to have a return value in an expression?
+In programming, the concept of a return value refers to the value that a function gives back after its execution. When a function is called, it can perform operations and then return a specific value as a result of those operations. This returned value can be used in assignments,
+calculations, or other parts of the program where the function was called
+Regarding having a return value in an expression, yes, it is possible to have a return value in an expression. Functions that return values can be used within expressions just like any other variable or value. For example, you can call a function that returns a value and use that returned value directly in an expression or assignment statement within your code
+
+
+
+
+
+8. If a function does not have a return statement, what is the return value of a call to that function?
+
+When a function in Python does not have a return statement, the return value of a call to that function is None. If there is no explicit return value specified in the function, Python automatically returns None by default. This means that if you call a function without a return statement, the function will execute but will implicitly return None as the result
+
+
+
+
+9. How do you make a function variable refer to the global variable?
+
+To make a function variable refer to a global variable in Python,
+you can use the global keyword within the function.
+By using the global keyword followed by the variable name, 
+you indicate that the variable should refer to the global variable with the same name. 
+This allows you to access and modify the global variable within the function. 
+Here is an example demonstrating how to use the global keyword to refer to a global variable inside a function
+
+
+10. What is the data type of None?
+'Nonetype' and 'None'
+
+
+11. What does the sentence import areallyourpetsnamederic do?
+import areallyourpetsnamederic
+module named areallyourpetsnamederic
+
+
+12. If you had a bacon() feature in a spam module, what would you call it after importing spam?
+
+After importing a module named spam that contains a function named bacon(), you would call the bacon() function using the syntax spam.bacon(). This notation allows you to access and execute the bacon() function that is defined within the spam module in Python
+
+13. What can you do to save a programme from crashing if it encounters an error?
+
+To prevent a program from crashing and losing unsaved work, you can implement techniques like autosaving data to a file periodically or before potential crashes. One approach is to save app data to a file before the program force closes after an error occurs. This can involve implementing mechanisms within the program to automatically save user data at regular intervals or before critical operations that may lead to crashes. By saving data to a file, you can ensure that important information is preserved even if the program encounters unexpected errors or crashes
+ Additionally, handling exceptions and errors gracefully in the code can help prevent crashes and provide users with a better experience by displaying informative messages or logging errors for debugging purposes
+
+14. What is the purpose of the try clause? What is the purpose of the except clause?
+in the inpute has same value so print try clause then its not in so except clause printed as output
