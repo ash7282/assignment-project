@@ -1,0 +1,106 @@
+1. What exactly is []?
+
+[] is an empty list. It is a data structure that stores a collection of items in a specific order.
+In Python, lists are created by enclosing a sequence of items within square brackets, separated by comma commas.
+
+
+
+
+2. In a list of values stored in a variable called spam, how would you assign the value &#39;hello&#39; as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+
+answers:-
+spam = [2, 4,'hello', 6, 8, 10]
+
+
+
+Let's pretend the spam includes the list ['a', 'b','c','d']
+for the next three queries.
+
+
+
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+
+spam[int(int('3' * 2) / 11)]
+anwers= 'd'
+
+4. What is the value of spam[-1]?
+
+output:- 'd'
+
+5. What is the value of spam[:2]?
+output:- ['a', 'b']
+
+Let&#39;s pretend bacon has the list [3.14, &#39;cat,&#39; 11, &#39;cat,&#39; True] for the next three questions.
+6. What is the value of bacon.index(&#39;cat&#39;)?
+output;- 1
+
+7. How does bacon.append(99) change the look of the list value in bacon?
+
+ouput:- [3.14, 'cat', 11, 'cat', True, 99]
+
+8. How does bacon.remove(&#39;cat&#39;) change the look of the list in bacon?
+
+
+ouput:-[3.14, 11, 'cat', True, 99]
+
+
+
+9. What are the list concatenation and list replication operators?
+
+ouput:-  The list concatenation operator is the `+` operator. It takes two lists as 
+operands and returns a new list that contains the elements of both lists in the same order
+
+10. What is difference between the list methods append() and insert()?
+
+ouput:- The `append()` method adds an element to the end of the list,
+while the `insert()` method inserts an element at a specific index in the list.
+
+11. What are the two methods for removing items from a list?
+
+ouput:- `remove()` This method removes the first occurrence of a specified element from the list.
+If the element is not found, it raises a `ValueError`.
+
+
+12. Describe how list values and string values are identical.
+
+ouput:- List values and string values are not identical in Python. Lists are mutable, meaning their elements can be changed, while strings are immutable, meaning their elements cannot be changed. Additionally, lists can contain elements of different data types,
+while strings can only contain characters.
+
+
+13. What&#39;s the difference between tuples and lists?
+
+ouput:- Immutability Tuples are immutable, meaning that their elements cannot be changed once they are created. Lists, on the other hand, are mutable, meaning that their elements can be changed.
+Syntax Tuples are created using parentheses, while lists are created using square brackets.
+Performance: Tuples are generally more efficient than lists in terms of memory usage and performance. This is because tuples are immutable and therefore do not require the same overhead a
+
+14. How do you type a tuple value that only contains the integer 42?
+
+ouput:- tuple=(42)
+
+15. How do you get a list value&#39;s tuple form? How do you get a tuple value&#39;s list form?
+
+ouput:-
+my_list = [1, 2, 3]
+my_tuple = tuple(my_list)
+print(my_tuple)  # Output: (1, 2, 3)
+
+
+my_list = [1, 2, 3]
+my_tuple = (my_list,)  # Notice the comma after the list
+print(my_tuple)  # Output: ( [1, 2, 3], ) 
+
+
+16. Variables that &quot;contain&quot; list values are not necessarily lists themselves. Instead, what do they
+contain?
+
+ouput:- Variables that "contain" list values do not contain the list itself, but rather a reference to the list. This means that if the list is modified,
+the variable will still refer to the same modified list.
+
+
+
+17. How do you distinguish between copy.copy() and copy.deepcopy()?
+
+The main distinction between `copy.copy()` and `copy.deepcopy()` is that `copy.copy()` creates a shallow copy of the original object, while `copy.deepcopy()` creates a deep copy.
+A shallow copy creates a new object that contains references to the original object's elements. This means that if the original object's elements are mutable, changes made to the copy will also affect the original object.
+A deep copy creates a new object that contains copies of the original object's elements. This means that changes made to the copy will not affect the original object.
