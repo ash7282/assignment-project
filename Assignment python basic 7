@@ -1,0 +1,56 @@
+1. What are escape characters, and how do you use them?
+
+Backslash () This is the key component of escape sequences. 
+The backslash followed by another character tells the program to interpret the following character literally, instead of its usual function
+
+
+2. What do the escape characters n and t stand for?
+
+in the escape character n stands for newline(n) and t stand for tabs(t) 
+
+
+3. What is the way to include backslash characters in a string?
+
+mystring = "This is a string with a backslash \\ character.";
+
+
+
+4. The string &quot;Howl&#39;s Moving Castle&quot; is a correct value. Why isn&#39;t the single quote character in the
+word Howl&#39;s not escaped a problem?
+
+this is a correct string value 
+
+
+
+5. How do you write a string of newlines if you don&#39;t want to use the n character?
+
+there is no anyway to newline without using n character only way to use n character
+
+6. What are the values of the given expressions?
+&#39;Hello, world!&#39;[1] ----'ello, world!'
+&#39;Hello, world!&#39;[0:5]  ---- Hello'
+&#39;Hello, world!&#39;[:5]  --- ('Hello, world!'[0:5])
+&#39;Hello, world!&#39;[3:] ---- 'lo, world!'
+
+
+
+7. What are the values of the following expressions?
+&#39;Hello&#39;.upper()           ------ 'HELLO'
+&#39;Hello&#39;.upper().isupper() ------  True
+&#39;Hello&#39;.upper().lower()  ------- 'hello'
+
+
+
+
+8. What are the values of the following expressions?
+&#39;Remember, remember, the fifth of July.&#39;.split()
+&#39;-&#39;.join(&#39;There can only one.&#39;.split())
+
+1-- ['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+2 -- 'There-can-be-only-one'
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+
+
+
+10. What is the best way to remove whitespace characters from the start or end?
