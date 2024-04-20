@@ -1,0 +1,52 @@
+
+1. To what does a relative path refer?
+A relative path in Python is a file path that is specified relative to the current working directory. 
+This means that the path does not start with a leading forward slash (/) or drive letter.
+Instead, it starts with a dot (.), which represents the current working directory.
+
+2. What does an absolute path start with your operating system?
+this start from forward slash / and then /home for instance C:\Users\AshEdito the folder name this show us operating system absolute path 
+
+3. What do the functions os.getcwd() and os.chdir() do?
+
+change the currently running directory
+os.chdir("mydir")
+
+Print the updated directory path
+print ("Updated directory:" , os.getcwd())
+
+4. What are the . and .. folders?
+--- this show that current directory and parrent directory 
+
+
+5. In C:\bacon\eggs\spam.txt, which part is the dir name, and which part is the base name?
+---- C:\bacon\eggs this is directory name and spam.txt are the base name
+
+
+6. What are the three “mode” arguments that can be passed to the open() function?
+ 'r' is the read mode 
+'w' is the write mode
+'a' is the append mode
+
+
+7. What happens if an existing file is opened in write mode?
+
+When an existing file is opened in write mode, its contents are overwritten.
+The file is treated as a new empty file, and any existing data is discarded. 
+This behavior is consistent across different programming languages and file systems.
+
+
+
+8. How do you tell the difference between read() and readlines()?
+
+read() reads the entire file content as a single string, while readlines() reads each line separately and returns them as a list of strings.
+
+
+
+9. What data structure does a shelf value resemble?
+
+The data structure of a shelf value resembles a dictionary. A shelf is a persistent, dictionary-like object that stores pickled values in a dictionary
+The values in a shelf can be arbitrary Python objects, including most class instances, recursive data types, and objects containing lots of shared sub-objects
+The keys are ordinary strings. Shelves are designed to ease the transition from dictionary-based scripts to those requiring persistent storage
+
+
