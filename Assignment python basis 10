@@ -1,0 +1,53 @@
+1. How do you distinguish between shutil.copy() and shutil.copytree()?
+
+The main difference between shutil.copy() and shutil.copytree() is that shutil.copy() copies a single file, while shutil.copytree() copies an entire directory and everything contained in it.
+
+2. What function is used to rename files??
+the function of rename file is that we can change the file name to another file name without lossing any data of original files 
+
+3. What is the difference between the delete functions in the send2trash and shutil modules?
+
+The main difference between the send2trash and shutil modules is that send2trash functions move files or folders to the recycle bin, while shutil functions permanently delete files and folders
+
+4.ZipFile objects have a close() method just like File objects’ close() method. What ZipFile method is
+equivalent to File objects’ open() method?
+
+The ZipFile method equivalent to File objects’ open() method is the open() method of ZipFile objects.
+This method returns a file-like object (ZipExtFile) that can be used to read the contents of a specific file in the ZIP archive. 
+The open() method takes a filename or a ZipInfo object as an argument and returns a file-like object that provides the following
+methods: read(), readline(), readlines(), iter(), next(). This file-like object can be used independently of the ZipFile object,
+but if the ZipFile object was created by passing in a file-like object as the first argument to the constructor, then the object returned by open() shares the ZipFile’s file pointer.
+In this case, the object returned by open() should not be used after any additional operations are performed on the ZipFile object.
+If the ZipFile object was created by passing in a string (the filename) as the first argument to the constructor, then open() will create a new file object that will be held by the ZipExtFile,
+allowing it to operate independently of the ZipFile. The open() method can also take a password as an argument to decrypt encrypted files in the ZIP archive.
+
+5. Create a programme that searches a folder tree for files with a certain file extension (such as .pdf
+or .jpg). Copy these files from whatever location they are in to a new folder.
+
+import os
+import shutil
+
+def find_and_copy(source_dir, target_dir, extension):
+  """
+  Searches the source directory and its subdirectories for files with the specified extension
+  and copies them to the target directory.
+
+  Args:
+      source_dir: The directory to search for files.
+      target_dir: The directory to copy the found files to.
+      extension: The file extension to search for (e.g., ".pdf" or ".jpg").
+  """
+  for root, dirs, files in os.walk(source_dir):
+    for file in files:
+      if file.endswith(extension):
+        source_path = os.path.join(root, file)
+        target_path = os.path.join(target_dir, file)
+        shutil.copy2(source_path, target_path)
+        print(f"Copied {source_path} to {target_path}")
+
+# Example usage
+source_dir = "/path/to/source/folder"
+target_dir = "/path/to/target/folder"
+extension = ".pdf"
+
+find_and_copy(source_dir, target_dir, extension)
